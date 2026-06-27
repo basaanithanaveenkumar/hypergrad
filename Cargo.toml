@@ -1,0 +1,10 @@
+[package]
+name = "HyperGrad"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# equivalent to numpy
+#ndarray = "0.15" # equivaluent to ndarray::blas in the system level repo
+ndarray = { version = "0.15", features = ["blas"] }
+rand = "0.8"
